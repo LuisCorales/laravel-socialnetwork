@@ -13,9 +13,9 @@
                 <div class="pr-5"><strong>23k</strong> followers</div>
                 <div class="pr-5"><strong>120</strong> following</div>
             </div>
-            <div class="pt-4 font-weight-bold">Somos DevNiors!</div>
-            <div>🎯 | Amigos desarrolladores;<br>💡 | Tips, anécdotas y variedades de #programacion;<br>💻 | Codear es nuestro camino ninja;</div>
-            <div><a href="#">google.com</a></div>
+            <div class="pt-4 font-weight-bold">{{ $user->profile->title }}</div>
+            <div>{{ $user->profile->description }}</div>
+            <div><a href="#">{{ $user->profile->url }}</a></div>
         </div>
     </div>
 
