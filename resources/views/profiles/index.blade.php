@@ -10,6 +10,7 @@
             <div class="d-flex justify-content-between align-items-baseline">
                 <h1 class="font-weight-lighter">{{ $user->username }}</h1>
                 <a href="/p/create">Add new post</a>
+                <a href="/p/create">Edit Profile</a>
             </div>
             <div class="d-flex">
                 <div class="pr-5"><strong>{{ $user->posts->count() }}</strong> posts</div>
@@ -25,7 +26,9 @@
     <div class="row pt-5">
         @foreach($user->posts as $post)
             <div class="col-4 pb-4">
-                <img src="/storage/{{ $post -> image }}" class="w-100">
+                <a href="#">
+                    <img src="/storage/{{ $post -> image }}" class="w-100">
+                </a>
             </div>
         @endforeach
     </div>
