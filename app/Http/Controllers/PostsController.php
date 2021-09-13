@@ -32,7 +32,7 @@ class PostsController extends Controller
         $image->save();
 
         $user = Auth::user();
-        $user()->posts()->create([
+        $user->posts()->create([
             'caption' => $data['caption'],
             'image' => $imagePath,
         ]);
