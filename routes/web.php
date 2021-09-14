@@ -17,9 +17,10 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/email', function () {
-    return new NewUserWelcomeMail();
-});
+// Only for debugging - Visit /email to check the preview of the email
+// Route::get('/email', function () {
+//     return new NewUserWelcomeMail();
+// });
 
 Route::post('follow/{user}', [\App\Http\Controllers\FollowsController::class, 'store']);
 

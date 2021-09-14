@@ -2,9 +2,7 @@
 
 namespace App\Models;
 
-use App\Http\Controllers\ProfileController;
 use App\Mail\NewUserWelcomeMail;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
