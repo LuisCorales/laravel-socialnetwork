@@ -24,7 +24,7 @@ DB_PASSWORD=password
 ~~~
 Create the database in MySQL named _laravel_socialnetwork_.
 
-#### TIP 0: To use every feature of the app, make an account on mailtrap.io, and copy the .env portion of code with your credentials as the one below.
+**TIP 0: To use every feature of the app, make an account on mailtrap.io, and copy the .env portion of code with your credentials as the one below.**
 ~~~
 MAIL_MAILER=smtp
 MAIL_HOST=smtp.mailtrap.io
@@ -41,11 +41,11 @@ More commands to run:
  - php artisan serve
 ~~~
 
-#### TIP 1: Every time you change your .env file, restart the server using _php artisan serve_ otherwise you won't see the changes.
+**TIP 1: Every time you change your .env file, restart the server using _php artisan serve_ otherwise you won't see the changes.**
 
-#### TIP 2: Make sure you already have PHP 8 and Laravel 8 properly installed before any command.
+**TIP 2: Make sure you already have PHP 8 and Laravel 8 properly installed before any command.**
 
-#### TIP 3: Sometimes, you would need to configurate your own _php.ini_ file to avoid errors when running the server.
+**TIP 3: Sometimes, you would need to configurate your own _php.ini_ file to avoid errors when running the server.**
 
 ## Access every view
 
