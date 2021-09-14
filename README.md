@@ -1,6 +1,6 @@
 # laravel-socialnetwork
 
-This is a project built in Laravel 8 PHP made to simulate a social network like Instagram!
+This is a project built in Laravel PHP made to simulate a social network like Instagram!
 
 ## Getting Started
 
