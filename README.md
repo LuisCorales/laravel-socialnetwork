@@ -9,18 +9,16 @@ Run these commands in order to setup the project:
  - npm install 
  - composer install
  - npm run dev
- - npm run dev
- - npm run mix
 ~~~
 
-Then, configure your .env file to use a database:
+Then, create your _.env_ file to use a database (there is an _.env.example_ file on the project, just copy and paste the content on the new _.env_ file):
 ~~~
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=laravel_socialnetwork
 DB_USERNAME=root
-DB_PASSWORD=password
+DB_PASSWORD=yourpassword
 ~~~
 Create the database in MySQL named _laravel_socialnetwork_.
 
@@ -34,14 +32,19 @@ MAIL_PASSWORD=
 MAIL_ENCRYPTION=tls
 ~~~
 
-More commands to run:
+**(OPTIONAL) Run this command in another terminal if you want to make changes to the project:**
 ~~~
  - npm run watch
+~~~
+More commands to run:
+~~~
+ - php artisan key:generate
  - php artisan migrate:fresh --seed
+ - php artisan storage:link
  - php artisan serve
 ~~~
 
-**TIP 1: Every time you change your .env file, restart the server using _php artisan serve_ otherwise you won't see the changes.**
+**TIP 1: Every time you change your _.env_ file, restart the server using _php artisan serve_ otherwise you won't see the changes.**
 
 **TIP 2: Make sure you already have PHP 8 and Laravel 8 properly installed before any command.**
 
