@@ -10,6 +10,12 @@ class Profile extends Model
     protected $guarded = [];
     use HasFactory;
 
+    public function profileImage()
+    {
+        $imagePath = ($this->image) ? $this->image : 'profile/default-profile-pic.jpg';
+        return '/storage/' . $imagePath;
+    }
+
     // Table relationship
     public function user()
     {
