@@ -5,20 +5,47 @@ This is a project built in Laravel 8 PHP made to simulate a social network like 
 ## Getting Started
 
 Run these commands in order to setup the project:
+~~~
  - npm install 
  - composer install
  - npm run dev
  - npm run dev
  - npm run mix
+~~~
+
+Then, configure your .env file to use a database:
+~~~
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel_socialnetwork
+DB_USERNAME=root
+DB_PASSWORD=password
+~~~
+Create the database in MySQL named _laravel_socialnetwork_.
+
+#### TIP 0: To use every feature of the app, make an account on mailtrap.io, and copy the .env portion of code with your credentials as the one below.
+~~~
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=
+MAIL_PASSWORD=
+MAIL_ENCRYPTION=tls
+~~~
+
+More commands to run:
+~~~
  - npm run watch
  - php artisan migrate:fresh --seed
  - php artisan serve
+~~~
 
-TIP 1: Every time you change your .env file, restart the server using _php artisan serve_ otherwise you won't see the changes.
+#### TIP 1: Every time you change your .env file, restart the server using _php artisan serve_ otherwise you won't see the changes.
 
-TIP 2: Make sure you already have PHP 8 and Laravel 8 properly installed before any command.
+#### TIP 2: Make sure you already have PHP 8 and Laravel 8 properly installed before any command.
 
-TIP 3: Sometimes, you would need to configurate your own _php.ini_ file to avoid errors when running the server.
+#### TIP 3: Sometimes, you would need to configurate your own _php.ini_ file to avoid errors when running the server.
 
 ## Access every view
 
